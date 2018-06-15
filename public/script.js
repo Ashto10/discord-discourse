@@ -1,3 +1,5 @@
+'use strict';
+
 $(function() {
   $('#survey-form').submit(function(event) {
     event.preventDefault();
