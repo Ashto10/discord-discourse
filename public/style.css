@@ -7,6 +7,11 @@ html, body {
 }
 
 body {
+  
+  background: -webkit-linear-gradient(#1b1b1c 0%, black 40%, black 100%);
+  background: -ms-linear-gradient(#1b1b1c 0%, black 40%, black 100%);
+  background: -o-linear-gradient(#1b1b1c 0%, black 40%, black 100%);
+  background: -moz-linear-gradient(#1b1b1c 0%, black 40%, black 100%);
   background: linear-gradient(#1b1b1c 0%, black 40%, black 100%);
   background-attachment: fixed;
   height: 100vh;
@@ -15,6 +20,10 @@ body {
 
 body:before {
   content: "";
+  background: -webkit-linear-gradient(var(--site-bg) 0%, var(--site-bg) 80%, #1b1b1c 100%);
+  background: -ms-linear-gradient(var(--site-bg) 0%, var(--site-bg) 80%, #1b1b1c 100%);
+  background: -o-linear-gradient(var(--site-bg) 0%, var(--site-bg) 80%, #1b1b1c 100%);
+  background: -moz-linear-gradient(var(--site-bg) 0%, var(--site-bg) 80%, #1b1b1c 100%);
   background: linear-gradient(var(--site-bg) 0%, var(--site-bg) 80%, #1b1b1c 100%);
   position: fixed;
   top: 0;
@@ -81,6 +90,7 @@ main {
 #top-half:after {
   background: linear-gradient(var(--paper-bg) 0%, transparent 0%), linear-gradient(135deg, var(--site-bg) 33.33%, transparent 33.33%) 0 0%, var(--site-bg) linear-gradient(45deg, var(--site-bg) 33.33%, var(--paper-bg) 33.33%) 0 0%;
   background: -webkit-linear-gradient(var(--paper-bg) 0%, transparent 0%), -webkit-linear-gradient(135deg, var(--site-bg) 33.33%, transparent 33.33%) 0 0%, var(--site-bg) -webkit-linear-gradient(45deg, var(--site-bg) 33.33%, var(--paper-bg) 33.33%) 0 0%;
+  background: -ms-linear-gradient(var(--paper-bg) 0%, transparent 0%), -ms-linear-gradient(135deg, var(--site-bg) 33.33%, transparent 33.33%) 0 0%, var(--site-bg) -ms-linear-gradient(45deg, var(--site-bg) 33.33%, var(--paper-bg) 33.33%) 0 0%;
   background: -o-linear-gradient(var(--paper-bg) 0%, transparent 0%), -o-linear-gradient(135deg, var(--site-bg) 33.33%, transparent 33.33%) 0 0%, var(--site-bg) -o-linear-gradient(45deg, var(--site-bg) 33.33%, var(--paper-bg) 33.33%) 0 0%;
   background: -moz-linear-gradient(var(--paper-bg) 0%, transparent 0%), -moz-linear-gradient(135deg, var(--site-bg) 33.33%, transparent 33.33%) 0 0%, var(--site-bg) -moz-linear-gradient(45deg, var(--site-bg) 33.33%, var(--paper-bg) 33.33%) 0 0%;
   background-repeat: repeat-x;
@@ -90,6 +100,7 @@ main {
 #bottom-half:before {
   background: linear-gradient(var(--site-bg) 0%, transparent 0%), linear-gradient(135deg, var(--paper-bg) 33.33%, transparent 33.33%) 0 0%, var(--paper-bg) linear-gradient(45deg, var(--paper-bg) 33.33%, var(--site-bg) 33.33%) 0 0%;
   background: -webkit-linear-gradient(var(--site-bg) 0%, transparent 0%), -webkit-linear-gradient(135deg, var(--paper-bg) 33.33%, transparent 33.33%) 0 0%, var(--paper-bg) -webkit-linear-gradient(45deg, var(--site-bg) 33.33%, var(--site-bg) 33.33%) 0 0%;
+  background: -ms-linear-gradient(var(--site-bg) 0%, transparent 0%), -ms-linear-gradient(135deg, var(--paper-bg) 33.33%, transparent 33.33%) 0 0%, var(--paper-bg) -ms-linear-gradient(45deg, var(--paper-bg) 33.33%, var(--site-bg) 33.33%) 0 0%;
   background: -o-linear-gradient(var(--site-bg) 0%, transparent 0%), -o-linear-gradient(135deg, var(--paper-bg) 33.33%, transparent 33.33%) 0 0%, var(--paper-bg) -o-linear-gradient(45deg, var(--paper-bg) 33.33%, var(--site-bg) 33.33%) 0 0%;
   background: -moz-linear-gradient(var(--site-bg) 0%, transparent 0%), -moz-linear-gradient(135deg, var(--paper-bg) 33.33%, transparent 33.33%) 0 0%, var(--paper-bg) -moz-linear-gradient(45deg, var(--paper-bg) 33.33%, var(--site-bg) 33.33%) 0 0%;
   background-repeat: repeat-x;
@@ -231,14 +242,14 @@ body.submitted:before {
   
   85% {
     top: 30%;
-    margin-top: -150px;
+    margin-top: -130px;
     transform: scale(0.25);
     opacity: 0.7;
   }
   
   100% {
     top: 50%;
-    margin-top: -50px;
+    margin-top: -30px;
     transform: scale(0.05);
     opacity: 0.5;
   }
