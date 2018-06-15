@@ -6,156 +6,159 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
     <main>
       <form id="survey-form" method="POST" action="/submit">
         <div id="top-half">
-          <h1 id="title">Discord Discourse</h1>
-          <p id="description">
-            Hello Extra Credit members! So, it's safe to say that the
-            larger a Discord group gets, the larger the demand becomes
-            for more channels and better channel management. Which I
-            suppose has brought us to this point. Feel free to use the
-            following form to sound off about how you'd like the channels
-            to be arranged, and we'll work together to see what we can do.
-          </p>
-          <div class="input-group">
-            <label for="name" id="name-label">Discord handle:</label>
-            <input id="name" type="text"
-                   placeholder="JohnDoe#3141" required>
-          </div>
-          <div class="input-group">
-            <label for="email" id="email-label">Email:</label>
-            <input id="email" type="email"
-                   placeholder="johndoe@email.net" required>
-          </div>
-          <div class="input-group">
-            <label for="number" id="number-label">Age:</label>
-            <input id="number" min="15" max="120"
-                   placeholder="18" type="number">
-          </div>
+          <div class="paper-contents">            
+            <h1 id="title">Discord Discourse</h1>
+            <p id="description">
+              Hello Extra Credit members! So, it's safe to say that the
+              larger a Discord group gets, the larger the demand becomes
+              for more channels and better channel management. Which I
+              suppose has brought us to this point. Feel free to use the
+              following form to sound off about how you'd like the channels
+              to be arranged, and we'll work together to see what we can do.
+            </p>
+            <div class="input-group">
+              <label for="name" id="name-label">Discord handle:</label>
+              <input id="name" type="text"
+                     placeholder="JohnDoe#3141" required>
+            </div>
+            <div class="input-group">
+              <label for="email" id="email-label">Email:</label>
+              <input id="email" type="email"
+                     placeholder="johndoe@email.net" required>
+            </div>
+            <div class="input-group">
+              <label for="number" id="number-label">Age:</label>
+              <input id="number" min="15" max="120"
+                     placeholder="18" type="number">
+            </div>
 
-          <div class="input-group">
-            <label for="dropdown">Your role on the server:</label>
-            <select id="dropdown">
-              <option value="visitor">Lurker</option>
-              <option value="member">Snake</option>
-              <option value="reader">Reader</option>
-              <option value="admin">Security Snep</option>
-              <option value="snakebot">YES, HELLO</option>
-              <option value="other">Other</option>
-            </select>
+            <div class="input-group">
+              <label for="dropdown">Your role on the server:</label>
+              <select id="dropdown">
+                <option value="visitor">Lurker</option>
+                <option value="member">Snake</option>
+                <option value="reader">Reader</option>
+                <option value="admin">Security Snep</option>
+                <option value="snakebot">YES, HELLO</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
           </div>
         </div>
         <div id="bottom-half">
-          <p>
-            In your opinion, which of the following sums up how
-            you would arrange Discord's channels?
-          </p>
-          <div class="radio-options">
-            <div class="input-group">
-              <label for="control-level-1">
-                There should be a channel for every topic, and users
-                should post to the proper discussion, on pain of death.
-              </label>
-              <input type="radio" name="control-level"
-                     value="strict-control" id="control-level-1">
+          <div class="paper-contents">    
+            <p>
+              In your opinion, which of the following sums up how
+              you would arrange Discord's channels?
+            </p>
+            <div class="radio-options">
+              <div class="input-group">
+                <label for="control-level-1">
+                  There should be a channel for every topic, and users
+                  should post to the proper discussion, on pain of death.
+                </label>
+                <input type="radio" name="control-level"
+                       value="strict-control" id="control-level-1">
+              </div>
+
+              <div class="input-group">
+                <label for="control-level-2">
+                  Having a wide array of channels is helpful, but users
+                  should be free to occassionally derail channels.
+                </label>
+                <input type="radio" name="control-level"
+                       value="moderate-control" id="control-level-2">
+              </div>
+
+              <div class="input-group">
+                <label for="control-level-3">
+                  Having fewer channels makes for a cleaner interface,
+                  and users should be trusted to self-moderate to avoid
+                  speaking over one another.
+                </label>
+                <input type="radio" name="control-level"
+                       value="lax-control" id="control-level-3">
+              </div>
+
+              <div class="input-group">
+                <label for="control-level-4">
+                  There should only be one channel, period. Let anarchy
+                  reign!
+                </label>
+                <input type="radio" name="control-level"
+                       value="frank-west" id="control-level-4">
+              </div>
+
             </div>
 
-            <div class="input-group">
-              <label for="control-level-2">
-                Having a wide array of channels is helpful, but users
-                should be free to occassionally derail channels.
-              </label>
-              <input type="radio" name="control-level"
-                     value="moderate-control" id="control-level-2">
+            <p>
+              Which of the following channels would you like to see?
+            </p>
+            <div class="checkbox-options">
+              <div class="input-group">
+                <label for="channel-option-1">General</label>
+                <input type="checkbox" name="channel-options"
+                       value="general" id="channel-option-1">
+              </div>
+              <div class="input-group">
+                <label for="channel-option-2">Artwork</label>
+                <input type="checkbox" name="channel-options"
+                       value="artwork" id="channel-option-2">
+              </div>
+              <div class="input-group">
+                <label for="channel-option-3">Selfies</label>
+                <input type="checkbox" name="channel-options"
+                       value="selfies" id="channel-option-3">
+              </div>
+              <div class="input-group">
+                <label for="channel-option-4">Media</label>
+                <input type="checkbox" name="channel-options"
+                       value="media" id="channel-option-4">
+              </div>
+              <div class="input-group">
+                <label for="channel-option-5">Shitposts</label>
+                <input type="checkbox" name="channel-options"
+                       value="shitposts" id="channel-option-5">
+              </div>
+              <div class="input-group">
+                <label for="channel-option-6">Food</label>
+                <input type="checkbox" name="channel-options"
+                       value="food" id="channel-option-6">
+              </div>
+              <div class="input-group">
+                <label for="channel-option-7">Gaming</label>
+                <input type="checkbox" name="channel-options"
+                       value="gaming" id="channel-option-7">
+              </div>
+              <div class="input-group">
+                <label for="channel-option-8">Other</label>
+                <input type="checkbox" name="channel-options"
+                       value="other" id="channel-option-8">
+              </div>
             </div>
 
-            <div class="input-group">
-              <label for="control-level-3">
-                Having fewer channels makes for a cleaner interface,
-                and users should be trusted to self-moderate to avoid
-                speaking over one another.
-              </label>
-              <input type="radio" name="control-level"
-                     value="lax-control" id="control-level-3">
-            </div>
+            <p>
+              Please feel free to leave any additional questions or
+              comments below. Your feedback is greatly appreciated.
+            </p>
+            <textarea id="comments"></textarea>
 
-            <div class="input-group">
-              <label for="control-level-4">
-                There should only be one channel, period. Let anarchy
-                reign!
-              </label>
-              <input type="radio" name="control-level"
-                     value="frank-west" id="control-level-4">
-            </div>
-
+            <button id="submit" type="submit">Submit</button>
           </div>
-
-          <p>
-            Which of the following channels would you like to see?
-          </p>
-          <div class="checkbox-options">
-            <div class="input-group">
-              <label for="channel-option-1">General</label>
-              <input type="checkbox" name="channel-options"
-                     value="general" id="channel-option-1">
-            </div>
-            <div class="input-group">
-              <label for="channel-option-2">Artwork</label>
-              <input type="checkbox" name="channel-options"
-                     value="artwork" id="channel-option-2">
-            </div>
-            <div class="input-group">
-              <label for="channel-option-3">Selfies</label>
-              <input type="checkbox" name="channel-options"
-                     value="selfies" id="channel-option-3">
-            </div>
-            <div class="input-group">
-              <label for="channel-option-4">Media</label>
-              <input type="checkbox" name="channel-options"
-                     value="media" id="channel-option-4">
-            </div>
-            <div class="input-group">
-              <label for="channel-option-5">Shitposts</label>
-              <input type="checkbox" name="channel-options"
-                     value="shitposts" id="channel-option-5">
-            </div>
-            <div class="input-group">
-              <label for="channel-option-6">Food</label>
-              <input type="checkbox" name="channel-options"
-                     value="food" id="channel-option-6">
-            </div>
-            <div class="input-group">
-              <label for="channel-option-7">Gaming</label>
-              <input type="checkbox" name="channel-options"
-                     value="gaming" id="channel-option-7">
-            </div>
-            <div class="input-group">
-              <label for="channel-option-8">Other</label>
-              <input type="checkbox" name="channel-options"
-                     value="other" id="channel-option-8">
-            </div>
-          </div>
-
-          <p>
-            Please feel free to leave any additional questions or
-            comments below. Your feedback is greatly appreciated.
-          </p>
-          <textarea id="comments"></textarea>
-
-          <button id="submit" type="submit">Submit</button>
         </div>
       </form>
     </main>
-    <div id="trashcan">
-      <div id="lid"></div>
-      <div id="bin"></div>
-      <p>
-        Your opinions have been filed away into their proper place
-      </p>
+    <div id="trash-container">
+      <img id="trash-lid" alt="A trash can lid" src="https://cdn.glitch.com/4d5eecf5-2e0b-4633-a794-24e2aeaf05e5%2Ftrash-lid-02.svg?1529092323338">
+      <img id="trash-can" alt="A trash can" src="https://cdn.glitch.com/4d5eecf5-2e0b-4633-a794-24e2aeaf05e5%2Ftrash-can-01.svg?1529092323463">
+      <p>Your opinion has been filed away properly</p>
     </div>
     <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
